@@ -12,7 +12,6 @@ Graph theory is also incorporated, covering graph representations, traversal alg
 
 Finally, the repository includes sorting and searching algorithms such as bubble sort, selection sort, insertion sort, merge sort, quicksort, and binary search, along with an understanding of their time and space complexities.
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-👨‍💻 Author Section
 
 👨‍💻 Author: Souvik Saha
 🚀 Focus: Building strong foundations in Data Structures and Algorithms through clean and practical implementations
