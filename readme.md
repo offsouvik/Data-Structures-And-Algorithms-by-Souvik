@@ -11,9 +11,9 @@ Tree data structures are covered extensively, including binary trees, binary sea
 Graph theory is also incorporated, covering graph representations, traversal algorithms like BFS and DFS, connected components, minimum spanning trees, and shortest path algorithms. Hash tables and hashing techniques, including collision resolution methods, are also implemented.
 
 Finally, the repository includes sorting and searching algorithms such as bubble sort, selection sort, insertion sort, merge sort, quicksort, and binary search, along with an understanding of their time and space complexities.
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 👨‍💻 Author Section
 
 👨‍💻 Author: Souvik Saha
 🚀 Focus: Building strong foundations in Data Structures and Algorithms through clean and practical implementations
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
