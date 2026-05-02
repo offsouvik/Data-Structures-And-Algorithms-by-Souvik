@@ -1,18 +1,128 @@
-📄 DSA all topics covered here are as follows:
+# Data Structures and Algorithms (DSA)
 
-This repository covers a comprehensive range of Data Structures and Algorithms topics as part of a structured academic syllabus. It begins with fundamental concepts such as the introduction to data structures, basic terminology, memory allocation, and algorithm analysis including asymptotic and amortized analysis. Array representations in both one-dimensional and two-dimensional forms are implemented along with essential operations and applications.
+## Overview
 
-The repository further explores Linked Lists in depth, including singly, doubly, and circular linked lists, along with their operations and practical applications. Advanced variations such as skip lists and polynomial manipulation are also part of the learning scope.
+This repository contains structured implementations of core Data Structures and Algorithms concepts. It is designed to build strong fundamentals through clean, modular, and practical code examples.
 
-Stack and Queue data structures are implemented using both arrays and linked lists. Additional concepts include circular queues, deque structures, and priority queues, along with real-world applications such as expression evaluation and job scheduling.
+The focus is on understanding internal working, time-space complexity, and real-world applicability of each data structure and algorithm.
 
-Tree data structures are covered extensively, including binary trees, binary search trees (BST), AVL trees, red-black trees, B-trees, and heaps. Various traversal algorithms such as inorder, preorder, postorder, and level-order are included, along with operations like insertion, deletion, and searching.
+---
 
-Graph theory is also incorporated, covering graph representations, traversal algorithms like BFS and DFS, connected components, minimum spanning trees, and shortest path algorithms. Hash tables and hashing techniques, including collision resolution methods, are also implemented.
+## Topics Covered
 
-Finally, the repository includes sorting and searching algorithms such as bubble sort, selection sort, insertion sort, merge sort, quicksort, and binary search, along with an understanding of their time and space complexities.
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+### Fundamentals
 
-👨‍💻 Author: Souvik Saha
-🚀 Focus: Building strong foundations in Data Structures and Algorithms through clean and practical implementations
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+* Introduction to Data Structures
+* Time and Space Complexity
+* Asymptotic Analysis
+
+### Arrays
+
+* 1D and 2D Arrays
+* Traversal, Insertion, Deletion
+
+### Linked Lists
+
+* Singly Linked List
+* Doubly Linked List
+* Circular Linked List
+* Operations: Insertion, Deletion, Traversal
+
+### Stack
+
+* Array Implementation
+* Linked List Implementation
+* Operations: Push, Pop, Peek
+
+### Queue
+
+* Linear Queue
+* Circular Queue
+* Deque
+* Priority Queue
+
+### Trees
+
+* Binary Tree
+* Binary Search Tree (BST)
+* AVL Tree
+* Heap
+* Traversals: Inorder, Preorder, Postorder, Level Order
+
+### Graphs
+
+* Representation (Adjacency Matrix, List)
+* BFS and DFS
+* Minimum Spanning Tree
+* Shortest Path Algorithms
+
+### Hashing
+
+* Hash Tables
+* Collision Handling Techniques
+
+### Sorting Algorithms
+
+* Bubble Sort
+* Selection Sort
+* Insertion Sort
+* Merge Sort
+* Quick Sort
+
+### Searching Algorithms
+
+* Linear Search
+* Binary Search
+
+---
+
+## Key Features
+
+* Clean and readable code
+* Modular and topic-wise implementation
+* Focus on core concepts and clarity
+* Beginner-friendly with practical approach
+
+---
+
+## Learning Objectives
+
+* Strengthen problem-solving skills
+* Understand internal logic of data structures
+* Analyze time and space complexity
+* Prepare for coding interviews and academics
+
+---
+
+## Project Structure
+
+Each topic is organized into separate files with focused implementations for easy understanding and revision.
+
+---
+
+## Usage
+
+Clone the repository and compile any file using a C compiler:
+
+```bash
+gcc filename.c -o output
+./output
+```
+
+---
+
+## Maintained By
+
+Souvik Saha
+
+---
+
+## Managed By
+
+This project is self-managed and continuously updated as part of ongoing learning and practice in Data Structures and Algorithms.
+
+---
+
+## Note
+
+This repository is built for educational purposes and will be updated with more advanced topics and optimizations over time.
