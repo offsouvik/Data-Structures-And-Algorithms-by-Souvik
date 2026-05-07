@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include<limits.h>
+#include<stdlib.h>
 
 void printArray(int *A, int n){
 
@@ -9,91 +11,76 @@ void printArray(int *A, int n){
     printf("\n");
 }
 
-int partition(int A[], int low, int high){
+int maximum(int A[], int n){
 
-    int pivot = A[low];
+    int max = INT_MIN;
 
-    int i = low + 1;
-    int j = high;
+    for(int i = 0; i < n; i++){
 
-    int temp;
-
-    printf("\n---------------------------------\n");
-    printf("Current Pivot = %d\n", pivot);
-    printf("Subarray Range = %d to %d\n", low, high);
-
-    do{
-
-        while(A[i] <= pivot && i <= high){
-            i++;
+        if(max < A[i]){
+            max = A[i];
         }
+    }
 
-        while(A[j] > pivot){
-            j--;
-        }
-
-        if(i < j){
-
-            printf("\nSwapping %d and %d\n", A[i], A[j]);
-
-            temp = A[i];
-            A[i] = A[j];
-            A[j] = temp;
-
-            printf("Array after swapping:\n");
-            printArray(A, 10);
-        }
-
-    }while(i < j);
-
-    printf("\nSwapping Pivot %d with %d\n", A[low], A[j]);
-
-    temp = A[low];
-    A[low] = A[j];
-    A[j] = temp;
-
-    printf("Array after placing pivot:\n");
-    printArray(A, 10);
-
-    printf("Pivot %d placed at index %d\n", A[j], j);
-
-    return j;
+    return max;
 }
 
-void quickSort(int A[], int low, int high){
+void countSort(int *A, int n){
 
-    int partitionIndex;
+    int i, j;
 
-    if(low < high){
+    int max = maximum(A, n);
 
-        partitionIndex = partition(A, low, high);
+    printf("\nMaximum Element = %d\n", max);
 
-        printf("\nLeft Side Sorting: low = %d , high = %d\n",
-               low, partitionIndex - 1);
+    int *count = (int *) malloc((max + 1) * sizeof(int));
 
-        quickSort(A, low, partitionIndex - 1);
+    for(i = 0; i < max + 1; i++){
+        count[i] = 0;
+    }
 
-        printf("\nRight Side Sorting: low = %d , high = %d\n",
-               partitionIndex + 1, high);
+    printf("\nCounting Frequencies:\n");
 
-        quickSort(A, partitionIndex + 1, high);
+    for(i = 0; i < n; i++){
+
+        count[A[i]]++;
+
+        printf("Element %d Frequency = %d\n",
+               A[i],
+               count[A[i]]);
+    }
+
+    i = 0;
+    j = 0;
+
+    while(i <= max){
+
+        if(count[i] > 0){
+
+            A[j] = i;
+
+            count[i]--;
+
+            j++;
+        }
+        else{
+            i++;
+        }
     }
 }
 
 int main(){
 
-    int A[] = {9, 4, 4, 8, 7, 5, 6, 2, 1, 10};
+    int A[] = {9, 1, 4, 14, 4, 15, 6, 3, 2, 9, 1};
 
-    int n = 10;
+    int n = 11;
 
     printf("Before Sorting:\n");
     printArray(A, n);
 
-    quickSort(A, 0, n - 1);
+    countSort(A, n);
 
-    printf("\n=================================\n");
-    printf("Final Sorted Array:\n");
-
+    printf("\nAfter Sorting:\n");
     printArray(A, n);
 
     return 0;
